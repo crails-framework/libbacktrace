@@ -1,0 +1,12 @@
+: 1
+name: libbacktrace
+version: 1.0.0
+summary: backtrace C++ library
+license: other: proprietary ; Not free/open source.
+description-file: README.md
+url: https://example.org/libbacktrace
+email: michael@unetresgrossebite.com
+#build-error-email: michael@unetresgrossebite.com
+depends: * build2 >= 0.15.0
+depends: * bpkg >= 0.15.0
+depends: libboost-system >= 1.74.0

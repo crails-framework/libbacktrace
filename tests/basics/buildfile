@@ -1,0 +1,3 @@
+import libs = libbacktrace%lib{backtrace}
+
+exe{driver}: {hxx ixx txx cxx}{**} $libs testscript{**}
