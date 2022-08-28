@@ -2,7 +2,7 @@
 name: libbacktrace
 version: 1.0.0
 summary: backtrace C++ library
-license: other: proprietary ; Not free/open source.
+license: BSL-1.0
 description-file: README.md
 url: https://example.org/libbacktrace
 email: michael@unetresgrossebite.com
