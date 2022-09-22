@@ -1,3 +1,4 @@
+import intf_libs += libboost-config%lib{boost_config}
 lib{backtrace}: {hxx ixx txx cxx}{**} $impl_libs $intf_libs
 
 hxx{export}@./: cxx.importable = false
