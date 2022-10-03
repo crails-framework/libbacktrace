@@ -7,6 +7,7 @@
 //
 #define BOOST_SOURCE
 
+//#include <boost/config.hpp>
 #include "backtrace.hpp"
 
 #if defined(__linux) || defined(__APPLE__) || defined(__sun)
