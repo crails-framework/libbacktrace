@@ -1,6 +1,6 @@
 : 1
 name: libbacktrace
-version: 1.0.0
+version: 2.0.0
 summary: boost-based backtrace C++ library
 license: BSL-1.0
 description-file: README.md
