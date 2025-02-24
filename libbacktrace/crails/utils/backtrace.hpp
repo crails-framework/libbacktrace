@@ -28,14 +28,7 @@ namespace boost_ext {
         
         static size_t const default_stack_size = 32;
 
-        backtrace(size_t frames_no = default_stack_size) 
-        {
-            if(frames_no == 0)
-                return;
-            frames_.resize(frames_no,0);
-            int size = stack_trace::trace(&frames_.front(),frames_no);
-            frames_.resize(size);
-        }
+        backtrace(size_t frames_no = default_stack_size);
 
         virtual ~backtrace() throw()
         {

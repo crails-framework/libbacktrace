@@ -45,6 +45,15 @@
 
 namespace boost_ext {
 
+    backtrace::backtrace(size_t frames_no)
+    {
+        if(frames_no == 0)
+            return;
+        frames_.resize(frames_no,0);
+        int size = stack_trace::trace(&frames_.front(),frames_no);
+        frames_.resize(size);
+    }
+
     namespace stack_trace {
         #if defined(BOOST_HAVE_EXECINFO)
         
