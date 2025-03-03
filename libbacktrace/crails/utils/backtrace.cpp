@@ -45,7 +45,7 @@
 
 namespace boost_ext {
 
-    backtrace::backtrace(size_t frames_no)
+    backtrace::backtrace(std::size_t frames_no)
     {
         if(frames_no == 0)
             return;

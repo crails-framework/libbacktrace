@@ -13,6 +13,7 @@
 #include <vector>
 #include <iosfwd>
 #include <string>
+#include <cstddef>
 
 namespace boost_ext {
 
@@ -26,15 +27,15 @@ namespace boost_ext {
     class backtrace {
     public:
         
-        static size_t const default_stack_size = 32;
+        static std::size_t const default_stack_size = 32;
 
-        backtrace(size_t frames_no = default_stack_size);
+        backtrace(std::size_t frames_no = default_stack_size);
 
         virtual ~backtrace() throw()
         {
         }
 
-        size_t stack_size() const
+        std::size_t stack_size() const
         {
             return frames_.size();
         }
